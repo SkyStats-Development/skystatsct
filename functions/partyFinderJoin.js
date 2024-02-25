@@ -1,10 +1,10 @@
 const { secretsColorizer, dailyRunsColorizer } = require("../functions/colorizeFunctions");
 const { addCommas, sanitizeString, timeToString } = require('../functions/helperFunctions');
 import axios from "axios";
-import { API_KEY } from "../index"; 
+import { pogdata } from "../functions/pogFunctions";
 
 function partyFinderJoin(player, classs, number) {
-  axios.get(`https://api.skystats.lol/partyfinder/${player}?key=${API_KEY}`)
+  axios.get(`https://api.skystats.lol/partyfinder/${player}?key=${pogdata.API_KEY}`)
     .then(response => {
     let data = response.data.data
     let profile_vex = [

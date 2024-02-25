@@ -1,10 +1,10 @@
 /* thank you bloom for this still learning */
-import { data } from "../functions/pogFunctions";
+import { pogdata } from "../functions/pogFunctions";
 
 const checkFirstInstall = () => {
-    if (!data.firstTime) return
-    data.firstTime = false
-    data.save()
+    if (!pogdata.firstTime) return
+    pogdata.firstTime = false
+    pogdata.save()
 
     let messages = [
         `&4&m${ChatLib.getChatBreak(" ")}`,
