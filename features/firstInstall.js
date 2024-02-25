@@ -23,4 +23,5 @@ const checkFirstInstall = () => {
 
 register("tick", () => {
     checkFirstInstall()
+
 })
