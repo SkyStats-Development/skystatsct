@@ -9,6 +9,7 @@
         "Vigilance",
         "axios",
         "promiseV2",
+        "PogData",
         "BloomCore"
     ]
 }
