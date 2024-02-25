@@ -3,7 +3,7 @@ const { addCommas, sanitizeString, timeToString } = require('../functions/helper
 import axios from "axios";
 
 function partyFinderJoin(player, classs, number) {
-    print(player)
+    //print(player)
   axios.get(`https://api.skystats.lol/partyfinder/${player}?key=73d628c622231d1603013f90a8dc198e8eeddc1901d4bab74b5e46b0470417a71aad66da42ef1e3276f1e1c3c95f71c67d46e37fa347626d18c0731734c729ee`)
     .then(response => {
     let data = response.data.data
@@ -18,6 +18,8 @@ function partyFinderJoin(player, classs, number) {
         `&aMP: &6&l${data.selected_magical_power} &7(${addCommas(data.magical_power)})\n`,
         `&aNetworth: &6${addCommas(data.total_networth.toString().split(".")[0])}\n`,
         ` \n`,
+        new TextComponent(`&a&l[PV] `).setClick("run_command", `/pv ${player}`),
+        new TextComponent(`&e&l[SKYCRYPT] `).setClick("open_url", `https://sky.lenny.ie/${player}`),
         new TextComponent(`&c&l[KICK] `).setClick("run_command", `/party kick ${player}`),
         new TextComponent(`&7&l[BLOCK]\n`).setClick("run_command", `/ignore add ${player}`),
         `&4&m${ChatLib.getChatBreak(" ")}\n`,
