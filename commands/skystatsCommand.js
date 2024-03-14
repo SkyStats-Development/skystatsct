@@ -24,7 +24,7 @@ export const skystatsCommand = register("command", (...args) => {
     }
     if (command === "simjoin") {
         let username = args[1]
-        partyFinderJoin(username, "Archer", 50)
+        partyFinderJoin(username)
     }
     if (!commands.includes(command)) {
         ChatLib.chat("&cUnknown Command! Use /ss help for more info.");

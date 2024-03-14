@@ -1,7 +1,7 @@
 {
     "name": "skystatsct",
     "description": "the better way to do dungeons partyfinder queue messages.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "Axle, The SkyStats Development Team",
     "entry": "index.js",
     "requires": [

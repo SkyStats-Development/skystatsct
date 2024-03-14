@@ -48,10 +48,16 @@ function addCommas(num) {
     return `${timeMinutes}:${(timeSeconds % 60).toString().padStart(2, "0")}`
 }
 
-
+function Catterpillerterizer(str) {
+    if (!str || typeof str !== 'string') {
+        return '';
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
 
 module.exports = {
     timeToString,
+    Catterpillerterizer,
     addCommas,
     sanitizeString
 }
