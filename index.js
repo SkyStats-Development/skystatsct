@@ -8,7 +8,7 @@ fetchDailyQuote()
 oauth()
 import { skystatsCommand } from "./commands/skystatsCommand.js";
 import { cryptCommand } from "./commands/cryptCommand.js";
-
+/* https://cdn.axle.coffee/images/cf5ef67f.png */;
 
 import "./features/firstInstall.js"; // Check if this is the first time running
 //import "./features/partyfinderqueue.js" // do not use till I fix it , it's broken right now...            

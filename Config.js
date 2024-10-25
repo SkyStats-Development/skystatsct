@@ -49,6 +49,14 @@ class Config {
     queuestats = true;
 
     @SwitchProperty({
+        name: 'Kuudra Queue Stats',
+        description: "Shows a player's stats when they join a kuudra queue.",
+        category: 'Kuudra',
+        subcategory: 'Party Finder',
+    })
+    kkqueuestats = true; /* kk does not stand for anything - get your head out of the gutter bbg :3 */
+
+    @SwitchProperty({
         name: 'Class Helper',
         description: "Shows what class should go where in a normal run of 1M-1T-1B-1A-1H.",
         category: 'Dungeons',
