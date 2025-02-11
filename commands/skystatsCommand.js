@@ -37,10 +37,10 @@ export const skystatsCommand = register("command", (...args) => {
                     ChatLib.command(`party kick ${player}`);
                 }
                 if (status.doannouncereason) {
-                    ChatLib.chat(`pc [SS] ${player} is a shitter. Reason: ${status.reason}`);
+                    ChatLib.command(`pc [SS] ${player} is a shitter. Reason: ${status.reason}`);
                 }
                 if (!status.doannouncereason && status.doannounce) {
-                    ChatLib.chat(`pc [SS] ${player} is a shitter.`);
+                    ChatLib.command(`pc [SS] ${player} is a shitter.`);
                 }
 
 
