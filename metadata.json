@@ -1,15 +1,15 @@
 {
-    "name": "skystatsct",
-    "description": "the better way to do dungeons partyfinder queue messages.",
-    "version": "0.0.4",
-    "author": "Axle, The SkyStats Development Team",
-    "entry": "index.js",
-    "requires": [
-        "requestV2",
-        "Vigilance",
-        "axios",
-        "promiseV2",
-        "PogData",
-        "BloomCore"
-    ]
+	"name": "skystatsct",
+	"description": "the better way to do dungeons partyfinder queue messages.",
+	"version": "0.0.6",
+	"author": "Axle, The SkyStats Development Team",
+	"entry": "index.js",
+	"requires": [
+		"requestV2",
+		"Vigilance",
+		"axios",
+		"promiseV2",
+		"PogData",
+		"BloomCore"
+	]
 }

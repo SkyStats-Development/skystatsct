@@ -13,10 +13,11 @@ register("chat", (player) => {
                 ChatLib.command(`party kick ${player}`);
 
             }
-            if (status.doannounce + status.doannouncereason) {
-                ChatLib.command(`pc [SS] ${player} is a shitter. Reason: ${status.reason}`);
-            } else if (status.doannounce) {
-                ChatLib.command(`pc [SS] ${player} is a shitter.`);
+            if (status.doannouncereason) {
+                ChatLib.chat(`pc [SS] ${player} is a shitter. Reason: ${status.reason}`);
+            }
+            if (!status.doannouncereason && status.doannounce) {
+                ChatLib.chat(`pc [SS] ${player} is a shitter.`);
             }
 
 
