@@ -33,8 +33,16 @@ export const shitterCommand = register("command", (...args) => {
             `${ChatLib.getCenteredText("&6&l Shitter Kicker")}`,
             `${ChatLib.getCenteredText("&7<> = Required Imput [] = Optional input")}`,
             ` `,
-            `&7/shitter import &8- Imports [&a&lJowoel&8&lAddons&f]&8 shitterlist to your default shitterlist.`,
-            `&7line 2`,
+            `&7/shitter migrate &8- Imports [&a&lJowoel&8&lAddons&f]&8 shitterlist to your default shitterlist.`,
+            `&7/shitter toggle [list] &8- Toggles the shitterlist on or off. if no name is provided, toggles all lists.`,
+            `&7/shitter add <player> [reason] &8- Adds a player to the shitterlist with an optional reason.`,
+            `&7/shitter remove <player> &8- Removes a player from the shitterlist.`,
+            `&7/shitter list &8- Lists all shitterlists.`,
+            `&7/shitter lookup <player> &8- Looks up a player in the shitterlist.`,
+            `&7/shitter clear &8- Clears the shitterlist. (default only - if you imported a list please remove manually)`,
+            `&7/shitter setting <setting> [value] &8- Toggles settings (kick, notif, reason). if no value is provided, toggles the setting globally.`,
+            `&7/shitter devmanualbuild &8- Builds the shitterlist manually. For developers only.`,
+            `&7/shitter test &8- Test command.`,
             `&4&m${ChatLib.getChatBreak(" ")}`
         ]
         ChatLib.chat(messages.join("\n"))
@@ -97,7 +105,7 @@ export const shitterCommand = register("command", (...args) => {
         importList(args[1])
     }
     if (command === "test") {
-        listShitterLists()
+        ChatLib.chat("bro thinks he's slick lmao");
     }
     if (command === "clear") {
         clearShitterList()
